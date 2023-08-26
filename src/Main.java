@@ -8,6 +8,7 @@ public class Main {
         }
         System.out.println((a == 1 || b == 1 || c == 1) ? true : false);
         if (a%2 != 0) {
+            System.out.println("test");
 
         }
 
