@@ -8,5 +8,11 @@ public class Test {
             x = x / 10;
         }
         System.out.println(result);
+
+        int[] array = {15, 25, 11, 0, 6};
+
+        for (int i = 0; i < array.length; ++i) {
+            System.out.print(array[i] + " ");
+        }
     }
 }
