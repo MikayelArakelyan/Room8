@@ -1,25 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 1, b = 5555, c = 1892;
-        if (a == 1 || b == 1 || c == 1) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
+        int row = 5;
+        int element = row;
+
+        for (int i = 0; i <= row; i++) {
+            for (int j = 0; j < element; j++) {
+                System.out.print("*");
+            }
+            element--;
+            System.out.println();
         }
-        System.out.println((a == 1 || b == 1 || c == 1) ? true : false);
-        if (a % 2 != 0) {
-            System.out.println("test");
-
-        }
-
-
-        switch (a) {
-            case 1, 2, 3:
-                System.out.println("Test");
-        }
-
-        while (a > -2) {
-            System.out.println(a-- + "tester");
+        int[][] aa = {{15, 53, 68, 49, 87}, {11, 51, 62, 41, 84}, {21, 52, 67, 94, 88}, {91, 15, 26, 54, 68}, {10, 50, 62, 41, 18}};
+        for (int i = 0; i < aa.length; i++) {
+            for (int j = 0; j < aa[i].length; j++) {
+                System.out.print(aa[i][j] + " ");
+            }
+            System.out.println();
         }
     }
+
 }
