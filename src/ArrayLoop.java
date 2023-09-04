@@ -28,11 +28,39 @@ public class ArrayLoop {
         System.out.println();
 
 
-        int[] twins = {7, 5, 7, 4, 5};
+        int[] twins = {7, 51, 78, 46, 5};
+        int[] twins1 = {-88, 7, 51, 78, 46, 5};
         int x = 0;
-        for (int i = 1; i < twins.length; i++) {
+        int y = 0;
+        for (int i = 0; i < twins.length; i++) {
+            x = x + twins[i];
+        }
+        for (int i = 0; i < twins1.length; i++) {
+            y = y + twins1[i];
+        }
+        System.out.println(y - x);
+        for (int i = 0; i < twins.length; i++) {
             x = x ^ twins[i];
         }
-
+        for (int i = 0; i < twins1.length; i++) {
+            y = y ^ twins1[i];
+        }
+        System.out.println("+++++++++++++++++++++++++++++++++");
+        System.out.println(y - x);
+        System.out.println("*********************************");
+        int temp = 0;
+        for (int i = 0; i < twins1.length; i++) {
+            for (int j = 1; j < twins1.length - i; j++) {
+                if (twins1[j] < twins1[j - 1]) {
+                    temp = twins1[j];
+                    twins1[j] = twins1[j - 1];
+                    twins1[j - 1] = temp;
+                }
+            }
+        }
+        System.out.print("*** ");
+        for (int i = 0; i < twins1.length; i++) {
+            System.out.print(twins1[i] + " *** ");
+        }
     }
 }
