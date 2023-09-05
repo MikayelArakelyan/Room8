@@ -24,7 +24,19 @@ public class MainHuman {
         student.name = "Mikayel";
         student.surname = "Arakelyan";
         student.year = 1989;
-        student.mark =54;
+        student.mark = 54;
+        double a = student.summery(2, 8);
+        student.summery(2, 8);
+        System.out.println(student.summery(2,9));
+        System.out.println(a);
+        student.fullName();
+        student.printInfo();
+        student.setName("Vigen");
+        System.out.println(student.getName());
+        student.year=-25;
+        System.out.println(student.year);
+        student.setYear(-25);
+        System.out.println(student.getYear());
 
     }
 }

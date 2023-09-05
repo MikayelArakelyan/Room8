@@ -1,5 +1,7 @@
 package Human.NewHuman;
 
+import Human.NewHuman.Model.NewStudent;
+
 public class Main {
     public static void main(String[] args) {
         NewStudent newStudent1 = new NewStudent();

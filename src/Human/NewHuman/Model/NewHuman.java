@@ -1,4 +1,4 @@
-package Human.NewHuman;
+package Human.NewHuman.Model;
 
 public class NewHuman {
     public String newName;
